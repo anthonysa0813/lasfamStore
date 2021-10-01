@@ -1,0 +1,58 @@
+.fieldContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listProducts {
+  flex: 1 0 100%;
+  padding: 0;
+  border-radius: 2rem;
+  background-color: aliceblue;
+}
+
+.formularioPayd {
+  flex: 1 0 100%;
+  padding: 0;
+}
+.clave {
+  margin-inline-start: 1rem;
+}
+.columna1 {
+  display: flex;
+  gap: 1rem;
+}
+.infoCard {
+  display: flex;
+  gap: 1rem;
+}
+
+.productContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imagePro {
+  width: 70px;
+  height: 70px;
+}
+.imagePro img {
+  width: 100%;
+}
+.infoPro {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 849px) {
+  .listProducts {
+    flex: 1 0 50%;
+    padding: 1rem;
+  }
+
+  .formularioPayd {
+    flex: 1 0 50%;
+  }
+  .formularioPayd {
+    padding: 1rem;
+  }
+}

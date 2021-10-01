@@ -1,0 +1,84 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+}
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+.country-Card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  padding-inline-start: 2rem;
+}
+.header h1 span {
+  color: rgb(64, 64, 240);
+}
+
+.icono {
+  height: 25px;
+  width: 22px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.country-Card select {
+  outline: none;
+
+  border: none;
+}
+
+.country-Card option {
+  outline: none;
+}
+
+.blockCard {
+  padding-inline-end: 1rem;
+  border-right: 1px solid #e1e1e1;
+  margin-inline-end: 1rem;
+}
+
+.icon-mapPin {
+  color: red;
+}
+
+button span {
+  padding-inline: 0.5rem;
+}
+@media screen and (min-width: 500px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block-start: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .country-Card {
+    width: 30%;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding-block-start: 1rem;
+  }
+}
